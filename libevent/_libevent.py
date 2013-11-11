@@ -1,6 +1,8 @@
 def __bootstrap__():
     global __bootstrap__, __loader__, __file__
     import sys, pkg_resources, imp, platform
+    if 'arm' in platform.machine():
+        machine = 'pi'
     if 'x86_64' in platform.machine():
         machine = 'x86_64'
     else:
