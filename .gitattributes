@@ -2,3 +2,4 @@
 .gitattributes export-ignore
 *.md export-ignore
 Makefile export-ignore
+test.py export-ignore

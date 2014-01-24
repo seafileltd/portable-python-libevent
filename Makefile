@@ -2,7 +2,7 @@ TARGZ = libevent.tar.gz
 all: $(TARGZ)
 
 $(TARGZ):
-	git archive -o $@ HEAD
+	git archive HEAD | gzip > $@
 
 clean:
 	rm -f $(TARGZ)
